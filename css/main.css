@@ -1,36 +1,51 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
+.btn-ghost {
+  color: #005e76;
+  border-color: #8bc9d9;
+  border-width: .1em;
+}
+
+.btn-ghost:hover {
+  background-color: #8bc9d9;
+  border-color: #005e76;
+  color: #000;
+}
 
 html {
-  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
 
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+.jp-lang {
   font-family: "Noto Sans Japanese", sans-serif;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+.nav-styling a {
+  color: #005e76;
+  border-bottom: .1em solid #8bc9d9;
+  text-decoration: none;
 }
 
-body {
-  margin: 0;
+.nav-styling a:hover {
+  border-color: #0084a6;
 }
 
-h1 {
-  font-style: normal;
+.section-border {
+  border-bottom: .1em solid #e2e2e2;
+  border-top: .1em solid #e2e2e2;
 }
 
-.img-flex {
-  width: 100%;
-  display: block;
+footer {
+  border-top: .1em solid #e2e2e2;
+  color: #666;
 }
 
-.eng {
-  font-family: "Noto Sans", sans-serif;
+@media only screen and (min-width: 60em) {
+
+  .nav-styling {
+    text-align: right;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
 }
